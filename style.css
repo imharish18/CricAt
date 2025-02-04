@@ -7,9 +7,7 @@ body{
     display: flex;
     font-family: "Josefin Sans", serif;
     font-weight: 600;
-    background: linear-gradient(to bottom, red, rgb(200, 9, 9),rgb(120, 2, 2));
-
-    justify-content: space-between;
+    background: linear-gradient(to bottom, red, rgb(200, 9, 9),rgba(120, 2, 2));    justify-content: space-between;
     align-items: flex-end;
 
 }
@@ -125,4 +123,98 @@ body{
     font-size: 30px;
 }
 
-/* REGISTRE LOGIN PAGE */
+/* REGISTRE Landing Page*/
+#home{
+    margin-top: 30px;
+    height: 84vh;
+    width: 100%;
+    background-image: url(img/extraImages/stadiumWIde.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#portion1{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+#leftPortion{
+    height: 85%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#rightPortion{
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px); 
+    border-radius: 20px; 
+    box-shadow: 5px 5px 30px #141834;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#adHead{
+    padding-top: 15px;
+    font-family: "Josefin Sans", serif;
+    font-weight: 900;
+    font-size: 70px;
+}
+#adDes{
+    font-family: "Josefin Sans", serif;
+    font-weight: 450;
+    font-size: 30px;
+}
+#leftPortionImage{
+    height: 100%;
+    width: 100%;
+}
+#adButton{
+    height: 15%;
+    width: 25%;
+    background-color: white;
+    border-radius: clamp(80px, 50%, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px #FEB2D9;
+}
+#adButton a{
+    text-decoration: none;
+    font-family: "josefin Sans", serif;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 7px;
+    color: linear-gradient(to bottom, red, rgb(200, 9, 9),rgba(120, 2, 2));
+
+}
+#leftPortionImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(5px 5px 10px #5c2657);
+
+}
+#home-leftPortion-img {
+    transition: transform 0.1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Home 2 */
+#home2{
+    margin-top: 30px;
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+}
