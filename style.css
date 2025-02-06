@@ -275,39 +275,16 @@ body{
     background-size: contain;
     filter: blur(px);
     display: flex;
-
-
-}
-#contestLeft{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-
-
-}
-#contestLeft .fa-bolt{
-    font-size: 400px;
-}
-#contestLeftText{
-
-    font-family: "josefin Sans";
-    font-weight: 800;
-    color: whitesmoke;
-    font-size: 60px;
-}
-#contestRight{
-    height: 90%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    color: white;
     gap: 30px;
-    
+
 }
+
+
+
+
 #h3Button{
     height: 10%;
     width: 25%;
@@ -336,7 +313,163 @@ body{
     color: white;
 }
 
-#h3Trophy {
-    font-size: 150px;
-}
+
     
+#iconH3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 350px;
+}
+#h3ContentData{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: "josefin Sans";
+
+}
+/* Auction WOrk */
+#auctionHome{
+    margin-top: 30px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/extraImages/auctionWall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    font-family: "josefin Sans";
+    color: white;
+    display: flex;
+    gap: 30px;
+    backdrop-filter: blur(5px);
+}
+#auctionText{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #BD1686, #F7E019);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(5px);
+}
+#auctionContent{
+    height: 450px;
+    width: 100%;
+    
+    display: flex;
+}
+#auctionContentLeft{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+
+
+}
+#auctionWork{
+    font-size: 350px;
+    background: linear-gradient(to bottom, #ea1fa6, #fbe306);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#AuctionButton{
+    height: 10%;
+    width: 25%;
+    background-color: #F7E019;
+    border-radius: clamp(80px, 50%, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px #FEB2D9;
+    color: #14a4f7;
+    cursor: pointer;
+}
+
+#AuctionButton a{
+    text-decoration: none;
+    font-family: "josefin Sans", serif;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 7px;
+    color: inherit;
+
+}
+#AuctionButton:hover{
+    background-color: #BD1686;
+    box-shadow: 1px 1px 4px #C80909;
+    color: white;
+}
+/* Footer Of tlhe Page */
+#footer{
+    height: 50vh;
+    width: 100%;
+    background-color: #20004B;
+}
+#footerHr{
+    padding: 0;
+    margin: 0;
+}
+#dataFooter{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "josefin Sans", serif;
+
+}
+#footerLogo{
+    height: 100%;
+    width: 20%;
+}
+#footerLogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#footerAddress{
+    height: 40%;
+    width: 15%;
+    margin-top: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+
+}
+#footerHead{
+    font-size: 30px;
+}
+#footerAbout{
+    height: 40%;
+    width: 20%;
+    margin-top: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+#footerSoicalMedia{
+    height: 40%;
+    width: 20%;
+    margin-top: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+#FooterTermsCondition{
+    height: 40%;
+    width: 20%;
+    margin-top: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+
+}
+#footerData{
+    margin-top: 9px;
+    font-size: 18px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

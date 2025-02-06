@@ -58,7 +58,8 @@ let h2Links =[
     "https://www.livemint.com/lm-img/img/2024/06/30/original/CRICKET-WC-2024-T20-IND-RSA-38_1719734726637.jpg",
     "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/391500/391556.jpg",
     "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/373300/373335.jpg",
-    "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/371500/371561.jpg"
+    "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/371500/371561.jpg",
+    "https://www.shutterstock.com/image-illustration/karachi-pakistan-26-may-cricket-600nw-2308637453.jpg"
 ];
 
 let h2TextBoxImage = document.querySelector("#h2TextBoxImage");
@@ -71,3 +72,58 @@ function h2ChangeImage() {
     }, 800); 
 }
 setInterval(h2ChangeImage,4000);
+
+function textRendering(element,textArray){
+    let textIndex = 0; 
+    let charIndex = 0; 
+    let isDeleting = false;
+    const speed = 50; 
+    const backspaceSpeed = 50;
+    const pauseTime = 1500;
+    const typingElement = document.getElementById(element);
+    typeEffect();
+        
+    function typeEffect() {
+        let currentText = textArray[textIndex];
+        if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex--);
+        } else {
+            typingElement.textContent = currentText.substring(0, charIndex++);
+        }
+
+        let delay = isDeleting ? backspaceSpeed : speed;
+
+        if (!isDeleting && charIndex === currentText.length+1) {
+            isDeleting = true;
+            delay = pauseTime;
+        } else if (isDeleting && charIndex === 1) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length;
+        }
+
+        setTimeout(typeEffect, delay);
+    }
+
+}
+
+
+const textArray1 = ["Welcome to CricAt!!", "Create Your Own Cards Free Now!", "Make Your Career!"];
+textRendering("adHead",textArray1);
+
+const textArray2 = ["Let's Start the Contest!","Customize your own Team!","Lets dive in a Contest!","Create a Clash Arena!"];
+textRendering("h3ContentData",textArray2);
+
+const textArray3 = ["Will this be the steal of the season?","Bidding war heating up! Who’s next?" ,"Dreams turn into reality under the auction hammer!", "Uncapped to Unstoppable – Who’s the next breakout star?" ];
+textRendering("auctionText",textArray3);
+
+document.addEventListener("DOMContentLoaded", function () {
+    let icons = document.querySelectorAll("#auctionContentLeft i");
+    let index = 0;
+    icons.forEach(icon => icon.style.display = "none"); 
+    icons[index].style.display = "inline-block";
+    setInterval(() => {
+        icons.forEach(icon => icon.style.display = "none"); 
+        icons[index].style.display = "inline-block"; 
+        index = (index + 1) % icons.length; 
+    }, 500);
+});
