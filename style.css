@@ -9,13 +9,15 @@ body{
     font-weight: 600;
     background: linear-gradient(to bottom, red, rgb(200, 9, 9),rgba(120, 2, 2));    justify-content: space-between;
     align-items: flex-end;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 /* NAV ALL ANCHOR TAGS */
 #navBar a{
     text-decoration: none;
     color: #FDFEFE;
-    font-size: 20px;
+
 }
 /* NAV LOGO */
 #navLogo a{
@@ -83,7 +85,7 @@ body{
     height: 70px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-left: auto;
     margin-right: 16px;
 
@@ -101,32 +103,39 @@ body{
 #icon {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.8));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes text take gradient color */
+    -webkit-text-fill-color: transparent; 
+
 }
 
 .icons a{
-    height: 70px;
+    height: 100%;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     gap: 8px;
-    transition: all 0.5s ease-out;
+    transition: all 0.1s ease-out;
 
 }
 .icons a:hover, .icons a:focus {
-  background-color: #ffffff62;
-  border-radius: 5%;
+    background-color: #ffffff62;
+    border-radius: 10%;
+    border-bottom: 1.5px solid white;
+    font-size:22px;
+
 }
 
 .navText{
-    font-size: 16px;
+    font-size: 14px;
 }
 #navMenu div{
-    margin-left: 4px;
+    margin-left:4px;
     width: 12px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* REGISTRE Landing Page*/
@@ -197,15 +206,23 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 4px #FEB2D9;
+    color: #C80909;
+    cursor: pointer;
 }
+
 #adButton a{
     text-decoration: none;
     font-family: "josefin Sans", serif;
     font-size: 30px;
     font-weight: 900;
     padding-top: 7px;
-    color: linear-gradient(to bottom, red, rgb(200, 9, 9),rgba(120, 2, 2));
+    color: inherit;
 
+}
+#adButton:hover{
+    background-color: #C80909;
+    box-shadow: 1px 1px 4px #C80909;
+    color: white;
 }
 #leftPortionImage img{
     height: 100%;
@@ -222,15 +239,19 @@ body{
     font-size: 35px;
     font-weight: 900;
     text-align: center;
-
+    font-style: italic;
 }
 
 /* Home 2 */
 #home2{
     margin-top: 30px;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     margin-bottom: 30px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #h2TextBox{
     border-radius: 1%;
@@ -238,9 +259,11 @@ body{
 }
 
 #h2TextBoxImage{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    margin: 15px;
     object-fit: cover;
+    box-shadow: 5px 5px 10px black;
 }
 
 /* 3rd Home */
@@ -253,6 +276,7 @@ body{
     filter: blur(px);
     display: flex;
 
+
 }
 #contestLeft{
     display: flex;
@@ -260,7 +284,8 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20px;
-    gap: 30px;
+
+
 }
 #contestLeft .fa-bolt{
     font-size: 400px;
@@ -272,6 +297,46 @@ body{
     color: whitesmoke;
     font-size: 60px;
 }
-#contestLeft{
+#contestRight{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
     
 }
+#h3Button{
+    height: 10%;
+    width: 25%;
+    background-color: white;
+    border-radius: clamp(80px, 50%, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px #FEB2D9;
+    color: #C80909;
+    cursor: pointer;
+}
+
+#h3Button a{
+    text-decoration: none;
+    font-family: "josefin Sans", serif;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 7px;
+    color: inherit;
+
+}
+#h3Button:hover{
+    background-color: #C80909;
+    box-shadow: 1px 1px 4px #C80909;
+    color: white;
+}
+
+#h3Trophy {
+    font-size: 150px;
+}
+    
